@@ -1,13 +1,13 @@
 {
   "name": "ember-build-attr-modifier",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An Ember modifier to attach a dynamic attribute to an element.",
   "keywords": [
     "ember-addon"
   ],
-  "repository": "",
+  "repository": "https://github.com/mastastealth/ember-build-attr-modifier",
   "license": "MIT",
-  "author": "",
+  "author": "Brian Franco <hi@brianfran.co>",
   "directories": {
     "doc": "doc",
     "test": "tests"

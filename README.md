@@ -35,7 +35,7 @@ This would create a DOM element:
 <button data-custom-btn-confirm=""}}>Confirm</button>
 ```
 
-**Positional arguments are automatically concatenated**. You can also pass in the value for the attribute:
+**All positional arguments are automatically concatenated**. You can also pass in the value for the attribute:
 ```hbs
 {{!-- app/components/foo-component.hbs --}}
 <button {{build-attr 'custom-btn-' @btnName value=true}}>Confirm</button>
