@@ -32,7 +32,7 @@ By default, attributes built with the modifier are prefixed with `data-` as [des
 
 This would create a DOM element:
 ```html
-<button data-custom-btn-confirm=""}}>Confirm</button>
+<button data-custom-btn-confirm="">Confirm</button>
 ```
 
 **All positional arguments are automatically concatenated**. You can also pass in the value for the attribute:
@@ -43,7 +43,7 @@ This would create a DOM element:
 
 This would give you the expected:
 ```html
-<button data-custom-btn-confirm="true"}}>Confirm</button>
+<button data-custom-btn-confirm="true">Confirm</button>
 ```
 
 In the event that you want to create a _non-data_ attribute, you can do:
@@ -54,7 +54,7 @@ In the event that you want to create a _non-data_ attribute, you can do:
 
 This will generate:
 ```html
-<button iam-rebel="fact"}}>Confirm</button>
+<button iam-rebel="fact">Confirm</button>
 ```
 
 
