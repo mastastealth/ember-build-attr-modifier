@@ -3080,14 +3080,6 @@ ember-assign-polyfill@^2.6.0:
     ember-cli-babel "^6.16.0"
     ember-cli-version-checker "^2.0.0"
 
-ember-class-based-modifier@^0.10.0:
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/ember-class-based-modifier/-/ember-class-based-modifier-0.10.0.tgz#bb40c05440a959d84e9e2f5038e3894773686d19"
-  integrity sha512-GPPOCYmRibGBUfiuq7oHQAGXgM6X8LK2I2crvQadqwbft5PjXDbR6x1xnOQ8TDWeOE0EluahXXOgWgdUVcmaMQ==
-  dependencies:
-    ember-cli-babel "^7.10.0"
-    ember-modifier-manager-polyfill "^1.2.0"
-
 ember-cli-babel-plugin-helpers@^1.0.0, ember-cli-babel-plugin-helpers@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/ember-cli-babel-plugin-helpers/-/ember-cli-babel-plugin-helpers-1.1.0.tgz#de3baedd093163b6c2461f95964888c1676325ac"
@@ -3471,6 +3463,17 @@ ember-modifier-manager-polyfill@^1.2.0:
     ember-cli-babel "^7.10.0"
     ember-cli-version-checker "^2.1.2"
     ember-compatibility-helpers "^1.2.0"
+
+ember-modifier@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/ember-modifier/-/ember-modifier-1.0.2.tgz#475ca6d0a5b47cde8077903328ad1ec99e562be8"
+  integrity sha512-YyZ6etJpeMTcrtNJvP+NmyJ+uA2DsYAIg4Mxg9ndYPbe6oXnNTnYQbvF7VIIUuY0Z7zfZ0CwCukFVQESBlJ6Eg==
+  dependencies:
+    ember-cli-babel "^7.11.1"
+    ember-cli-is-package-missing "^1.0.0"
+    ember-cli-normalize-entity-name "^1.0.0"
+    ember-cli-string-utils "^1.1.0"
+    ember-modifier-manager-polyfill "^1.2.0"
 
 ember-qunit@^4.5.1:
   version "4.5.1"

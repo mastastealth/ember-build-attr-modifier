@@ -1,4 +1,4 @@
-import Modifier from 'ember-class-based-modifier';
+import Modifier from 'ember-modifier';
 
 export default class BuildAttrModifier extends Modifier {
   get attrName() {
