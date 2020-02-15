@@ -27,7 +27,7 @@ By default, attributes built with the modifier are prefixed with `data-` as [des
 
 ```hbs
 {{!-- app/components/foo-component.hbs --}}
-<button {{build-attr 'custom-btn-' @btnName}}>Confirm</button>
+<button {{build-attr 'custom-btn' @btnName}}>Confirm</button>
 ```
 
 This would create a DOM element:
@@ -38,7 +38,7 @@ This would create a DOM element:
 **All positional arguments are automatically concatenated**. You can also pass in the value for the attribute:
 ```hbs
 {{!-- app/components/foo-component.hbs --}}
-<button {{build-attr 'custom-btn-' @btnName value=true}}>Confirm</button>
+<button {{build-attr 'custom-btn' @btnName value=true}}>Confirm</button>
 ```
 
 This would give you the expected:
