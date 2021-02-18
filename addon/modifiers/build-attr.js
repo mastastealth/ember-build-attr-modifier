@@ -6,7 +6,7 @@ export default class BuildAttrModifier extends Modifier {
   }
 
   get attrVal() {
-    return this.args.named.value || "";
+    return this.args.named.value || '';
   }
 
   get noPrefix() {
@@ -14,9 +14,7 @@ export default class BuildAttrModifier extends Modifier {
   }
 
   didReceiveArguments() {
-    const attr = (this.noPrefix)
-      ? this.attrName
-      : `data-${this.attrName}`;
+    const attr = this.noPrefix ? this.attrName : `data-${this.attrName}`;
 
     this.element.setAttribute(attr, this.attrVal);
     return attr;
