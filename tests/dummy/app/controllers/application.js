@@ -1,5 +1,5 @@
 import Controller from '@ember/controller';
 
-export default Controller.extend({
-  btnName: 'hello'
-});
+export default class AppController extends Controller {
+  btnName = 'hello';
+}
