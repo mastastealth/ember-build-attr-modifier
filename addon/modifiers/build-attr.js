@@ -16,7 +16,10 @@ export default class BuildAttrModifier extends Modifier {
   didReceiveArguments() {
     const attr = this.noPrefix ? this.attrName : `data-${this.attrName}`;
 
-    this.element.setAttribute(attr, this.attrVal);
+    if (!this.element.hasAttribute(attr)) {
+      this.element.setAttribute(attr, this.attrVal);
+    }
+
     return attr;
   }
 }
