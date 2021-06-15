@@ -51,4 +51,4 @@ jobs:
           ${{ runner.os }}-yarn-
 
     - run: yarn install --frozen-lockfile
-    - run: yarn ember test
+    - run: yarn test:ember-compatibility
