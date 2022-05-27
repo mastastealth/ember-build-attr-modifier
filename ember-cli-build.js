@@ -5,11 +5,17 @@ const EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 module.exports = function (defaults) {
   let app = new EmberAddon(defaults, {});
 
-  const { Webpack } = require('@embroider/webpack');
-  return require('@embroider/compat').compatBuild(app, Webpack, {
+  const { maybeEmbroider } = require('@embroider/test-setup');
+  return maybeEmbroider(app, {
     staticAddonTestSupportTrees: true,
     staticAddonTrees: true,
     staticHelpers: true,
-    staticComponents: true,
+    staticModifiers: true,
+    statisComponents: true,
+    skipBabel: [
+      {
+        package: 'qunit',
+      },
+    ],
   });
 };
