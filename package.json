@@ -1,6 +1,6 @@
 {
   "name": "ember-build-attr-modifier",
-  "version": "0.8.1",
+  "version": "1.0.0",
   "description": "An Ember modifier to attach a dynamic attribute to an element.",
   "keywords": [
     "ember-addon"

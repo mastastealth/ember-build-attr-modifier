@@ -1,23 +1,29 @@
 import Modifier from 'ember-modifier';
 
 export default class BuildAttrModifier extends Modifier {
+  name = '';
+  attrVal = '';
+  attrList = [];
+  noPrefix = false;
+
   get attrName() {
-    return this.args.positional.join('-') || this.args.named.name;
+    return this.attrList.join('-') || this.name;
   }
 
-  get attrVal() {
-    return this.args.named.value || '';
-  }
+  modify(
+    element,
+    positional = [],
+    { name = '', value = '', noPrefix = false }
+  ) {
+    this.attrList = [...positional];
+    this.name = name;
+    this.attrVal = value;
+    this.noPrefix = noPrefix;
 
-  get noPrefix() {
-    return this.args.named.noPrefix;
-  }
-
-  didReceiveArguments() {
     const attr = this.noPrefix ? this.attrName : `data-${this.attrName}`;
 
-    if (!this.element.hasAttribute(attr)) {
-      this.element.setAttribute(attr, this.attrVal);
+    if (!element.hasAttribute(attr)) {
+      element.setAttribute(attr, this.attrVal);
     }
 
     return attr;
